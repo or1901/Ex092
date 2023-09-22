@@ -10,9 +10,9 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 /**
- * @author    Ori Roitzaid <or1901 @ bs.amalnet.k12.il>
- * @version	  1
- * @since	  18/9/2023
+ * @author Ori Roitzaid <or1901 @ bs.amalnet.k12.il>
+ * @version	1
+ * @since 18/9/2023
  * The main activity:
  * Collects data of a mathematical series, and sends it to the results activity.
  */
@@ -36,13 +36,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * This function sends the data of the series to the second activity(if valid).
+     * This function sends the data of the series to the results activity(if valid).
      * If not valid, presents a toast message.
      * <p>
      *
      * @param view The view object of the next button.
      */
-    public void nextActivity(View view) {
+    public void nextToResults(View view) {
         if(isDataValid()) {
             si = new Intent(this, ResultsActivity.class);
 

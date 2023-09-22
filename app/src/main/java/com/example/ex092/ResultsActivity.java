@@ -25,7 +25,7 @@ public class ResultsActivity extends AppCompatActivity implements View.OnCreateC
     ListView lv;
     ArrayAdapter<Double> adp;
     TextView infoTv;
-    Intent gi;
+    Intent gi, si;
     int seriesType, itemPosition;
     double firstValue, diffQuot, seriesSum;
     Double[] seriesArr = new Double[20];
@@ -170,5 +170,16 @@ public class ResultsActivity extends AppCompatActivity implements View.OnCreateC
      */
     public void backToMain(View view) {
         finish();
+    }
+
+    /**
+     * This function moves the user to the credits activity.
+     * <p>
+     *
+     * @param view The view object of the clicked button.
+     */
+    public void nextToCredits(View view) {
+        si = new Intent(this, CreditsActivity.class);
+        startActivity(si);
     }
 }
