@@ -168,7 +168,7 @@ public class ResultsActivity extends AppCompatActivity implements View.OnCreateC
      *
      * @param view The view object of the clicked button.
      */
-    public void goBack(View view) {
+    public void backToMain(View view) {
         finish();
     }
 }

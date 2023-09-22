@@ -9,7 +9,7 @@
     <Space
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="0.5" />
+        android:layout_weight="0.6" />
 
     <LinearLayout
         android:layout_width="0dp"
@@ -20,7 +20,7 @@
         <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1" />
+            android:layout_weight="0.7" />
 
         <ListView
             android:id="@+id/lv"
@@ -31,7 +31,31 @@
         <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.5" />
+            android:layout_weight="0.4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:onClick="backToMain"
+                android:text="Back" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" />
     </LinearLayout>
 
     <Space
@@ -61,7 +85,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="5"
-                android:gravity="center_horizontal|center_vertical"
+                android:gravity="center_vertical"
                 app:autoSizeTextType="uniform" />
         </LinearLayout>
 
@@ -73,25 +97,21 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_weight="1.8"
             android:orientation="horizontal">
 
             <Space
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="4" />
+                android:layout_weight="5" />
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="5"
-                android:onClick="goBack"
-                android:text="Back" />
+                android:onClick="nextToCredits"
+                android:text="Credits" />
 
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.8" />
         </LinearLayout>
 
         <Space
@@ -103,5 +123,5 @@
     <Space
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="0.5" />
+        android:layout_weight="0.6" />
 </LinearLayout>
