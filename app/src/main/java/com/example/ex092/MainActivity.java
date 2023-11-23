@@ -57,12 +57,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(si);
         }
         else {
-            Toast.makeText(this, "There is an empty field!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Empty or invalid field!", Toast.LENGTH_SHORT).show();
         }
     }
 
     /**
-     * This function checks if the data of the series is valid(there isn't an empty field).
+     * This function checks if the data of the series is valid.
      * <p>
      *
      * @return Whether the series data is valid, or not.
@@ -71,8 +71,11 @@ public class MainActivity extends AppCompatActivity {
         firstValueStr = firstValueEt.getText().toString();
         diffQuotStr = diffQuotEt.getText().toString();
 
-        return (ariRb.isChecked() || geoRb.isChecked()) && (!firstValueStr.equals("")) &&
-                (!diffQuotStr.equals(""));
+        return (ariRb.isChecked() || geoRb.isChecked()) && (!firstValueStr.equals(""))
+                && (!firstValueStr.equals("-")) && (!firstValueStr.equals("."))
+                && (!firstValueStr.equals("-.")) && (!diffQuotStr.equals(""))
+                && (!diffQuotStr.equals("-")) && (!diffQuotStr.equals("."))
+                && (!diffQuotStr.equals("-."));
     }
 
     /**
